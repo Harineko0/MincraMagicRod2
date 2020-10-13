@@ -12,13 +12,13 @@ public final class Main extends JavaPlugin {
         // Plugin startup logic
 
         getCommand("mmr").setExecutor(new Commands());
-        getLogger().info(Property.getProperty("prefix")+"Loaded");
+//        getLogger().info(Property.main("prefix")+"Loaded");
     }
 
     @Override
     public void onDisable() {
         // Plugin shutdown logic
 
-        getLogger().info(Property.getProperty("prefix")+"Unloaded");
+//        getLogger().info(Property.main("prefix")+"Unloaded");
     }
 }

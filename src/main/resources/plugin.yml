@@ -1,0 +1,5 @@
+name: MincraMagicRod2
+version: ${project.version}
+main: jp.mincra.mincramagicrod2.Main
+api-version: 1.13
+authors: [Harineko0, mankan000]

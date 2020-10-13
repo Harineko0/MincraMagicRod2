@@ -3,3 +3,8 @@ version: ${project.version}
 main: jp.mincra.mincramagicrod2.Main
 api-version: 1.13
 authors: [Harineko0, mankan000]
+
+commands:
+  mmr:
+    description: MincraMagicRod's command.
+    usage: /<command> <config>

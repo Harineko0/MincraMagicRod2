@@ -1,14 +1,16 @@
-package jp.mincra.mincramagicrod2;
+package jp.mincra.mincramagicrod2.Sys;
 
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.Properties;
+import java.util.ResourceBundle;
 
 public class Property {
 
-    private static final String INIT_FILE_PATH = "resourse/config.properties";
+//    ResourceBundle bundle = ResourceBundle.getBundle("MincraMagicRod2.config");
+    private static final String INIT_FILE_PATH = "MincraMagicRod2/config.properties";
     private static final Properties properties;
 
     private Property() throws Exception {

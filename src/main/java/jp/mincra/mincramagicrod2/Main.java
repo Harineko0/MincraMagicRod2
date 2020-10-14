@@ -11,21 +11,19 @@ public final class Main extends JavaPlugin {
     public void onEnable() {
         // Plugin startup logic
 
-//        String[] key = {"prefix"};
-//        String[] value = new String[];
-//        try {
-//            value = Property.main(key);
-//        } catch (IOException e) {
-//            e.printStackTrace();
-//        }
-//        System.out.println(value+" MincraMagicRod2 Loaded");
         getCommand("mmr").setExecutor(new Commands());
+
+        //configファイル等作成
+        try {
+            Property.make();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
     @Override
     public void onDisable() {
         // Plugin shutdown logic
 
-//        getLogger().info(Property.main("prefix")+"Unloaded");
     }
 }

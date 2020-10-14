@@ -24,4 +24,23 @@ public class Property {
 
         return value;
     }
+
+    public static void make() throws IOException {
+        File dir = new File(".\\plugins\\MincraMagicRod2");
+        File file = new File(".\\plugins\\MincraMagicRod2\\config.properties");
+
+        if (dir.exists()){
+        } else {
+            dir.mkdir();
+        }
+
+        if (file.exists()){
+        } else {
+            FileWriter fileWriter = new FileWriter(file);
+
+            file.createNewFile();
+            fileWriter.write("prefix=MincraMagicRod2\ntest=ABC");
+            fileWriter.close();
+        }
+    }
 }

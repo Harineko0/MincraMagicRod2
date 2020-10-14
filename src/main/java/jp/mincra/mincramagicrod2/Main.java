@@ -1,9 +1,9 @@
 package jp.mincra.mincramagicrod2;
 
-import jp.mincra.mincramagicrod2.Sys.Property;
-import org.bukkit.command.Command;
-import org.bukkit.command.CommandSender;
+import jp.mincra.mincramagicrod2.Data.Property;
 import org.bukkit.plugin.java.JavaPlugin;
+
+import java.io.IOException;
 
 public final class Main extends JavaPlugin {
 
@@ -11,8 +11,15 @@ public final class Main extends JavaPlugin {
     public void onEnable() {
         // Plugin startup logic
 
+//        String[] key = {"prefix"};
+//        String[] value = new String[];
+//        try {
+//            value = Property.main(key);
+//        } catch (IOException e) {
+//            e.printStackTrace();
+//        }
+//        System.out.println(value+" MincraMagicRod2 Loaded");
         getCommand("mmr").setExecutor(new Commands());
-//        getLogger().info(Property.main("prefix")+"Loaded");
     }
 
     @Override

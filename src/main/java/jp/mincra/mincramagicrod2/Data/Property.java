@@ -5,7 +5,8 @@ import java.io.*;
 import java.util.Properties;
 
 public class Property {
-    public static void main(String[] args) throws IOException {
+    public static String main(String[] args) throws IOException {
+
         // Properties読み込み
         Properties properties = new Properties();
 
@@ -13,8 +14,8 @@ public class Property {
         String path = new File(".").getAbsoluteFile().getParent()+"\\config.properties";
         InputStream stream = new FileInputStream(path);
         properties.load(stream);
-        String value = properties.getProperty("prefix");
+        String value = properties.getProperty(String.valueOf(args));
 
-        System.out.println(value);
+        return value;
     }
 }

@@ -1,3 +1,4 @@
-jp\mincra\mincramagicrod2\Commands.class
 jp\mincra\mincramagicrod2\Main.class
+jp\mincra\mincramagicrod2\Commands\TabCompletion.class
 jp\mincra\mincramagicrod2\Data\Property.class
+jp\mincra\mincramagicrod2\Commands\Commands.class

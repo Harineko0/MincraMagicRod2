@@ -1,4 +1,4 @@
-package jp.mincra.mincramagicrod2;
+package jp.mincra.mincramagicrod2.Commands;
 
 import jp.mincra.mincramagicrod2.Data.Property;
 import org.bukkit.ChatColor;
@@ -7,8 +7,11 @@ import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
 
 public class Commands implements CommandExecutor {
+    @Override
     public boolean onCommand(CommandSender sender, Command command , String label , String[] args) {
         switch (args[0]){
             case "reload":

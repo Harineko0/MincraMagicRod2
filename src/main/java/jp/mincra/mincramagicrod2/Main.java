@@ -1,5 +1,7 @@
 package jp.mincra.mincramagicrod2;
 
+import jp.mincra.mincramagicrod2.Commands.Commands;
+import jp.mincra.mincramagicrod2.Commands.TabCompletion;
 import jp.mincra.mincramagicrod2.Data.Property;
 import org.bukkit.plugin.java.JavaPlugin;
 
@@ -12,6 +14,7 @@ public final class Main extends JavaPlugin {
         // Plugin startup logic
 
         getCommand("mmr").setExecutor(new Commands());
+        getCommand("mmr").setTabCompleter(new TabCompletion());
 
         //configファイル等作成
         try {
